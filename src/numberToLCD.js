@@ -1,10 +1,14 @@
 export class NumberToLCD {
   static convert(number) {
-    if (number === 1)
-      return '  |\n  |\n  |\n  |\n  |\n';
-    else if (number === 2)
-      return ' - \n  |\n - \n|  \n - \n';
-
-    return ' - \n| |\n| |\n| |\n - \n';
+    switch (number) {
+      case 0:
+        return ' - \n| |\n| |\n| |\n - \n';
+      case 1:
+        return '  |\n  |\n  |\n  |\n  |\n';
+      case 2:
+        return ' - \n  |\n - \n|  \n - \n';
+      default:
+        return '';
+    }
   }
 }

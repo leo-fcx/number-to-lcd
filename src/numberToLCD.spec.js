@@ -18,7 +18,6 @@ describe('Number to LCD', () => {
 
   it('should convert 2 to LCD representation', () => {
     let expected = ' - \n  |\n - \n|  \n - \n';
-    console.log(expected)
     assert.equal(NumberToLCD.convert(2), expected);
   });
 });
