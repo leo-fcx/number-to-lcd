@@ -20,4 +20,9 @@ describe('Number to LCD', () => {
     let expected = ' - \n  |\n - \n|  \n - ';
     assert.equal(NumberToLCD.convert(2), expected);
   });
+
+  it('should convert 3 to LCD representation', () => {
+    let expected = ' - \n  |\n - \n  |\n - ';
+    assert.equal(NumberToLCD.convert(3), expected);
+  });
 });
