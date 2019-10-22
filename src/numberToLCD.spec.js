@@ -56,6 +56,11 @@ describe('Number to LCD', () => {
     assert.equal(NumberToLCD.convertDigit(9), expected);
   });
 
+  it('should return empty string when converting invalid digit', () => {
+    let expected = '';
+    assert.equal(NumberToLCD.convertDigit('a'), expected);
+  });
+
   it('should convert 123 to LCD representation', () => {
     let expected = '  | -  - \n  |  |  |\n  | -  - \n  ||    |\n  | -  - ';
     assert.equal(NumberToLCD.convert(123), expected);
