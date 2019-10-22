@@ -25,4 +25,34 @@ describe('Number to LCD', () => {
     let expected = ' - \n  |\n - \n  |\n - ';
     assert.equal(NumberToLCD.convert(3), expected);
   });
+
+  it('should convert 4 to LCD representation', () => {
+    let expected = '| |\n| |\n - \n  |\n  |';
+    assert.equal(NumberToLCD.convert(4), expected);
+  });
+
+  it('should convert 5 to LCD representation', () => {
+    let expected = ' - \n|  \n - \n  |\n - ';
+    assert.equal(NumberToLCD.convert(5), expected);
+  });
+
+  it('should convert 6 to LCD representation', () => {
+    let expected = ' - \n|  \n - \n| |\n - ';
+    assert.equal(NumberToLCD.convert(6), expected);
+  });
+
+  it('should convert 7 to LCD representation', () => {
+    let expected = ' - \n  |\n  |\n  |\n  |';
+    assert.equal(NumberToLCD.convert(7), expected);
+  });
+
+  it('should convert 8 to LCD representation', () => {
+    let expected = ' - \n| |\n - \n| |\n - ';
+    assert.equal(NumberToLCD.convert(8), expected);
+  });
+
+  it('should convert 9 to LCD representation', () => {
+    let expected = ' - \n| |\n - \n  |\n - ';
+    assert.equal(NumberToLCD.convert(9), expected);
+  });
 });
