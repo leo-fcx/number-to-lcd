@@ -58,7 +58,6 @@ describe('Number to LCD', () => {
 
   it('should convert 123 to LCD representation', () => {
     let expected = '  | -  - \n  |  |  |\n  | -  - \n  ||    |\n  | -  - ';
-    console.log(expected);
     assert.equal(NumberToLCD.convert(123), expected);
   });
 });
