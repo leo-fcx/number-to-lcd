@@ -1,3 +1,5 @@
 export class NumberToLCD {
-  static convert() {}
+  static convert() {
+    return ' - \n| |\n| |\n| |\n - \n';
+  }
 }
