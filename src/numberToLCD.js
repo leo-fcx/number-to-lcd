@@ -1,12 +1,18 @@
 export class NumberToLCD {
   static convert(number) {
+    const numbers = [
+      [' - ', '| |', '| |', '| |', ' - '],
+      ['  |', '  |', '  |', '  |', '  |'],
+      [' - ', '  |', ' - ', '|  ', ' - '],
+    ];
+
     switch (number) {
       case 0:
-        return ' - \n| |\n| |\n| |\n - \n';
+        return numbers[0].join('\n');
       case 1:
-        return '  |\n  |\n  |\n  |\n  |\n';
+        return numbers[1].join('\n');
       case 2:
-        return ' - \n  |\n - \n|  \n - \n';
+        return numbers[2].join('\n');
       default:
         return '';
     }
